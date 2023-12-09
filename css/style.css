@@ -135,7 +135,7 @@ body {
   /* padding-top: 100px; */
   overflow:hidden;
   position: relative;
-  
+
 }
 .trend_item{
   display: flex;
@@ -151,6 +151,10 @@ body {
   z-index: 1;
 
 }
+.trend_categoryes{
+  display: flex;
+  flex-wrap: nowrap;
+}
 .trend_category{
   display:flex;
   flex-direction: column;
@@ -159,11 +163,15 @@ body {
   max-width: 100%;
 }
 
+.trend_link{
+  list-style-type: none;
+}
 .trend_picture{
 filter: brightness(60%);
 
 }
 .trend_title{
-  color: white;
+  /* color: white; */
+  color: black;
   padding-bottom: 35px;
 }
