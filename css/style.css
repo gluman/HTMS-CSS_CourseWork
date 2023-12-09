@@ -77,10 +77,11 @@ body {
   margin: auto;
   border: 1px black solid;
 }
-.trends{
+.section_trends{
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  width: 100%;
 }
 .trends_title_container{
   display: flex;
@@ -119,22 +120,26 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  max-width: inherit;
   justify-content: space-between;
   width: 100%;
 }
 .trend_item_container{
   display: flex;
-  flex-direction: row;
-  max-width: 25%;
-  align-items: flex-end;
-  justify-content: space-around;
+  box-sizing: border-box;
+  flex-direction: column-reverse;
+  /* flex-wrap: wrap; */
+  /* width: ; */
+  /* align-items: flex-end; */
+  justify-content: flex-start;
   padding-bottom: 18px;
   /* padding-top: 100px; */
+  overflow:hidden;
+  position: relative;
+  
 }
 .trend_item{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
   text-transform: uppercase;
   margin-left: 18px;
@@ -142,8 +147,8 @@ body {
   border: 3px solid #b59f5b;
   padding-left: 33px;
   padding-right: 33px;
-  position:fixed;
   max-width: 371px;
+  z-index: 1;
 
 }
 .trend_category{
