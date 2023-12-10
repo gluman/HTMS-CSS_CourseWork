@@ -150,10 +150,10 @@ body {
   max-width: 371px;
 }
 
-.back_img1{background-image: url("../images/trend1.jpg") }
-.back_img2{background-image: url("../images/trend2.jpg")}
-.back_img3{background-image: url("../images/trend3.jpg")}
-.back_img4{background-image: url("../images/trend4.jpg")}
+.back_img1{background-image: url("./images/trend1.jpg") }
+.back_img2{background-image: url("./images/trend2.jpg")}
+.back_img3{background-image: url("./images/trend3.jpg")}
+.back_img4{background-image: url("./images/trend4.jpg")}
 
 .trend_categoryes{
   display: flex;
