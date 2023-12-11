@@ -6,6 +6,7 @@ body {
   flex-direction: column;
 }
 .header_container {
+  position: relative;
   font-size: 45px;
   line-height: 75px;
   font-weight: 700;
@@ -19,11 +20,22 @@ body {
   flex-wrap: wrap;
   /* flex: wrap; */
   background-image: url("../images/banner-bg.jpg");
-  filter: brightness(70%);
+  /* filter: brightness(70%); */
   background-repeat: no-repeat;
-  background-size: cover;
-  background: rgba(0, 0, 0, 05.)
-  border: 1px black solid;
+  background-size: cover; 
+  /* border: 1px black solid; */
+
+}
+
+.header_container::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 2;
 }
 .header-top-panel {
   width: 1413px;
@@ -34,6 +46,7 @@ body {
   justify-content: space-between;
   /* border: 3px green solid; */
   box-sizing: border-box;
+  z-index: 3;
 }
 .logo {
   /* margin-left: 248px; */
@@ -77,7 +90,7 @@ body {
   text-align: center;
   /* text-justify: inter-character; */
   margin: auto;
-  /* border: 1px black solid; */
+  z-index: 3;
 }
 .section_trends{
   display: flex;
@@ -101,12 +114,10 @@ body {
   font-family: "Open Sans";
   margin: auto;
   text-align: center;
-  
-  /* width: 182px; */
-  /* border: 1px black solid; */
-  /* padding: 0px; */
   flex-shrink: 1;
   white-space: nowrap;
+
+
 }
 .trends_title_emphasis{
   width: 66px;
@@ -131,9 +142,19 @@ body {
   align-items: flex-end;
   justify-content: flex-start;
   padding-bottom: 18px;
-  /* overflow:hidden; */
   position: relative;
   height: 320px;
+  }
+
+  .trend_item_container::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 2;
   }
 .trend_item{
   display: flex;
@@ -147,6 +168,7 @@ body {
   padding-right: 35px;
   padding-bottom: 35px;
   max-width: 371px;
+  z-index: 3;
 
 }
 
@@ -159,26 +181,23 @@ body {
   display: flex;
   flex-wrap: nowrap;
   list-style-type: none;
-  justify-items: start;
   padding-left: 0px;
   font-weight: bolder;
   justify-content: start;
+  gap: 0px 10px;
 }
 .trend_category{
   box-sizing: border-box;
   color: #b59f5b;
   max-width: 100%;
   margin-right: 1rem;
-
+  z-index: 3;
 }
 
 .trend_link{
   text-decoration: none;
 }
-.trend_picture{
-filter: brightness(60%);
 
-}
 .trend_title{
   color: white;
   /* color: black; */
