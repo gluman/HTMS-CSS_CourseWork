@@ -185,10 +185,11 @@ body {
   font-weight: bolder;
   justify-content: start;
   gap: 0px 10px;
+  
 }
 .trend_category{
   box-sizing: border-box;
-  color: #b59f5b;
+  
   max-width: 100%;
   margin-right: 1rem;
   z-index: 3;
@@ -196,6 +197,7 @@ body {
 
 .trend_link{
   text-decoration: none;
+  color: #b59f5b;
 }
 
 .trend_title{
