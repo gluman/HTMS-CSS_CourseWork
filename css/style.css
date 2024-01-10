@@ -53,6 +53,7 @@ body {
   width: 180px;
   height: 40px;
   margin: 30px;
+  margin-left: 245px;
   justify-content: start;
 
 }
@@ -104,7 +105,8 @@ body {
   display: flex;
   flex: wrap;
   flex-direction: column;
-  margin: 60px auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .trends_title{
   display: block;
