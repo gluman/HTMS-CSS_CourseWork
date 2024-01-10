@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  max-width: 1660px;
+  max-width: 100%;
   display: flex;
   flex: wrap;
   flex-direction: column;
@@ -38,7 +38,7 @@ body {
   z-index: 2;
 }
 .header-top-panel {
-  width: 1413px;
+  width: 100%;
   display: flex;
   flex: nowrap;
   margin-left: auto;
@@ -52,9 +52,9 @@ body {
   /* margin-left: 248px; */
   width: 180px;
   height: 40px;
-  margin-top: 29px;
+  margin: 30px;
   justify-content: start;
-  
+
 }
 
 .menu {
@@ -77,7 +77,8 @@ body {
   /* border: 1px black solid; */
 }
 .header_title {
-  display: inline-block;
+  display: flex;
+  flex-wrap: nowrap;
   /* box-sizing: border-box; */
   width: 680px;
   height: 110px;
@@ -89,7 +90,8 @@ body {
   font-family: "Open Sans";
   text-align: center;
   /* text-justify: inter-character; */
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 3;
 }
 .section_trends{
