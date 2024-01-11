@@ -53,7 +53,6 @@ body {
   width: 180px;
   height: 40px;
   margin: 30px;
-  margin-left: 245px;
   justify-content: start;
 
 }
@@ -95,12 +94,12 @@ body {
   margin-right: auto;
   z-index: 3;
 }
-.section_trends{
+/* .section_trends{
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   width: 100%;
-}
+} */
 .trends_title_container{
   display: flex;
   flex: wrap;
@@ -123,13 +122,14 @@ body {
   text-transform: uppercase;
 
 }
-.trends_title_emphasis{
+.trends_title::after{
   width: 66px;
   height: 3px;
   background-color: #b59f5b;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  margin-top:30px;
 }
 
 .trends_container{
@@ -148,7 +148,9 @@ body {
   padding-bottom: 18px;
   position: relative;
   height: 320px;
-  border: 2px solid white
+  border: 2px solid white;
+  background-repeat: no-repeat;
+  background-size: cover; 
   }
 
   .trend_item_container::after{
