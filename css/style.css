@@ -189,7 +189,8 @@ body {
   justify-content: start;
   gap: 0px 10px;
   text-transform: uppercase;
-  
+  height: 20px;
+  align-items: center;
 }
 .trend_category{
   box-sizing: border-box;
@@ -276,7 +277,8 @@ body {
   flex-direction: row;
   margin-top: 0px;
   margin-bottom: 55px;
-
+  height: 20px;
+  align-items: center;
 
  }
 .post_createdate{
