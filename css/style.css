@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   max-width: 100%;
   display: flex;
   flex: wrap;
   flex-direction: column;
+  margin: 0px;
 }
 .header_container {
   position: relative;
@@ -142,12 +147,12 @@ body {
   flex-direction: column-reverse;
   align-items: flex-end;
   justify-content: flex-start;
-  padding-bottom: 18px;
+  /* padding-bottom: 18px; */
   position: relative;
-  height: 320px;
   border: 2px solid white;
   background-repeat: no-repeat;
   background-size: cover; 
+  width: 25%;
   }
 
   .trend_item_container::after{
@@ -164,13 +169,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-    margin-left: 18px;
-  margin-right: 18px;
+  margin: 18px;
+  margin-top: 135px;
   border: 3px solid #b59f5b;
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 35px;
-  max-width: 371px;
+  /* max-width: 371px; */
   z-index: 3;
 
 }
@@ -191,6 +196,7 @@ body {
   text-transform: uppercase;
   height: 20px;
   align-items: center;
+  margin-bottom: 0px;
 }
 .trend_category{
   box-sizing: border-box;
@@ -219,9 +225,8 @@ body {
   font-size: 1.2em;
   margin-bottom: 0px;
   text-transform: uppercase;
-  /* font-size: 20px; */
-  line-height: 24px;
   font-family: "Open Sans", sans-serif;
+  text-decoration: none;
 }
 .content_block{
   display: flex;
@@ -270,6 +275,7 @@ body {
   line-height: 24px;
   color: #0f0d0e;
   font-weight: 700;
+  text-decoration: none;
  }
  .post_date_author{
   display: flex;
@@ -318,6 +324,7 @@ font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
+  font-family: "Open Sans", sans-serif;
 }
 .newposts_line{
   width: 66px;
@@ -355,6 +362,7 @@ font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .input_style{
@@ -395,3 +403,6 @@ font-family: "Open Sans", sans-serif;
   margin-bottom: 30px;
 }
 
+.newpost_{
+  margin-top: 0px;
+}
